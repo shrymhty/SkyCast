@@ -1,0 +1,230 @@
+*,
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #8eafc5;
+}
+
+header {
+    text-align: left;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #fdeee1;
+    border-radius: 20px;
+    margin: 20px;
+    background: #233947; 
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    width: 30px;
+    padding-right: 10px;
+}
+
+main {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1.3fr 3.7fr; /* 1 part and 4 parts */
+    grid-template-rows: 50vh 50vh; 
+    margin: 20px;
+    gap: 20px;
+}
+
+.overview, .highlight, .map {
+    background-color: #233947;
+    border-radius: 15px;
+    padding: 20px;
+    color: #fdeee1;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+}
+
+#status {
+    transform: translateY(-2rem);
+    width: 8rem;
+}
+
+.weather-stat > p {
+    font-size: 2.5rem;
+    transform: translateY(-2rem);
+}
+
+#desc {
+    transform: translateY(-2rem);
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    transform: translateY(-1.5rem);
+}
+
+.weather-stat > hr {
+    transform: translateY(-1.5rem);
+}
+
+#location {
+    width: 3rem;
+}
+
+.datetime {
+    display: flex;
+    align-items: center;
+    transform: translateY(-1.5rem);
+}
+
+#cal {
+    width: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.highlight {
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    padding: 20px;
+    gap: 20px;
+}
+
+.wind-status, .uv-index, .sunrise-sunset {
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* the actual frosted glass magic */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+    padding: 20px;
+    flex: 1; /* make them grow equally */
+    min-height: 150px; /* optional: adjust height */
+}
+
+.wind-status img {
+    display: block;
+    margin: 0.5rem auto;
+    width: 120px; /* or whatever size you want */
+}
+
+#wind-details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.uv-index img {
+    display: block;
+    margin: 0.5rem auto;
+    width: 120px; 
+}
+
+#uv-details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#sunrise, #sunset {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+#sunrise-svg, #sunset-svg {
+    width: 100px;
+}
+
+.icon {
+    text-align: center;
+    transform: translateY(-0.5rem);
+}
+
+.icon > p {
+    transform: translateY(-1.8rem);
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+}
+
+.search > img {
+    width: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#search-input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    transition: width 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    color: #233947;
+    width: 0px;
+    overflow: hidden;
+    font-size: 1.05rem;
+}
+
+
+#search-input.show {
+    width: 150px; /* or any width you want */
+}
+
+.history-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+    align-items: center;
+}
+
+.history-title > h4 {
+    color: #233947;
+    font-size: 1.1rem;
+}
+
+.history-title > select {
+    background-color: #233947;
+    border: none;
+    padding: 10px;
+    color: #fdeee1;
+    border-radius: 20px;
+}
+
+.forecast {
+    background-color: #233947;
+    flex-grow: 1;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+#card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 10px;
+}

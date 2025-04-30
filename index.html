@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="weather.svg" alt="skycast-logo" id="logo">
+            <p>SkyCast</p>
+        </div>
+        <div class="search">
+            <img src="search.svg" alt="search-svg" id="search-svg">
+            <input type="text" id="search-input" placeholder="Search..." style="display: none;" spellcheck="false">
+        </div>
+    </header>
+    <main>
+        <div class="overview">
+            <div class="weather-stat">
+                <img src="icons.svg/thunderstorms-rain.svg" alt="status" id="status">
+                <p>28<sup style="font-size: 1.7rem;">°C</sup></p>
+                <div id="desc">Rainy, Story clouds</div>
+                <hr>
+                <div class="location">
+                   <img src="icons.svg/location.svg" alt="location" id="location"> 
+                   <p>Florida, US</p>
+                </div>
+                <div class="datetime">
+                    <img src="icons.svg/calendar.svg" alt="cal" id="cal">
+                    <p>26 April, 2025 &nbsp;<span style="font-weight: bold;">4:20 P.M</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="highlight">
+            <div class="wind-status">
+                <h4>Wind Status</h4>
+                <img src="icons.svg/wind.svg" alt="wind status" id="wind-svg">
+                <hr>
+                <div id="wind-details">
+                    <p><span style="font-weight: bold; font-size: 2rem;">7.90</span>&nbsp;km/h</p>
+                    <p>Windy</p>
+                </div>
+            </div>
+            <div class="uv-index">
+                <h4>UV Index</h4>
+                <img src="icons.svg/uv-index.svg" alt="uv-stat"  id="uv-svg">
+                <hr>
+                <div id="uv-details">
+                    <p><span style="font-weight: bold; font-size: 2rem;">5.50</span>&nbsp;uv</p>
+                </div>
+            </div>
+            <div class="sunrise-sunset">
+                <h4>Sunset and Sunrise</h4>
+                <div id="sunrise">
+                    <div class="icon">
+                      <img src="icons.svg/sunrise.svg" alt="sunrise-svg" id="sunrise-svg">  
+                      <p>Sunrise</p>
+                    </div>
+                    
+                    5:24 A.M
+                </div>
+                <div id="sunset">
+                    <div class="icon">
+                       <img src="icons.svg/sunset.svg" alt="sunset-svg" id="sunset-svg"> 
+                       <p>Sunset</p>
+                    </div>
+                    
+                    6:03 P.M
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="history-title">
+                <h4>7 days Forecast</h4>
+                <select name="timeline" id="timeline">
+                    <option value="today">Today</option>
+                    <option value="hourly">Hourly</option>
+                    <option value="week">7 day</option>
+                </select>
+            </div>
+            <div class="forecast">
+                <div id="card">1</div>
+                <div id="card">2</div>
+                <div id="card">3</div>
+                <div id="card">4</div>
+                <div id="card">5</div>
+                <div id="card">6</div>
+                <div id="card">7</div>
+            </div>
+        </div>
+        <div class="map">map</div>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+</html>
