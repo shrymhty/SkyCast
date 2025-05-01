@@ -20,55 +20,53 @@
     <main>
         <div class="overview">
             <div class="weather-stat">
-                <img src="icons.svg/thunderstorms-rain.svg" alt="status" id="status">
-                <p>28<sup style="font-size: 1.7rem;">°C</sup></p>
+                <img src="icons/thunderstorms-rain.svg" alt="status" id="status">
+                <p><span id="temp">28</span><sup style="font-size: 1.7rem;">°C</sup></p>
                 <div id="desc">Rainy, Story clouds</div>
                 <hr>
                 <div class="location">
-                   <img src="icons.svg/location.svg" alt="location" id="location"> 
-                   <p>Florida, US</p>
+                   <img src="icons/location.svg" alt="location" id="location"> 
+                   <p id="location-name">Florida, US</p>
                 </div>
                 <div class="datetime">
-                    <img src="icons.svg/calendar.svg" alt="cal" id="cal">
-                    <p>26 April, 2025 &nbsp;<span style="font-weight: bold;">4:20 P.M</span></p>
+                    <img src="icons/calendar.svg" alt="cal" id="cal">
+                    <p id="overview-date">26 April, 2025&nbsp;<span style="font-weight: bold;">4:20 P.M</span></p>
                 </div>
             </div>
         </div>
         <div class="highlight">
             <div class="wind-status">
                 <h4>Wind Status</h4>
-                <img src="icons.svg/wind.svg" alt="wind status" id="wind-svg">
+                <img src="icons/wind.svg" alt="wind status" id="wind-svg">
                 <hr>
                 <div id="wind-details">
-                    <p><span style="font-weight: bold; font-size: 2rem;">7.90</span>&nbsp;km/h</p>
+                    <p><span id="speed" style="font-weight: bold; font-size: 2rem;">7.90</span>&nbsp;km/h</p>
                     <p>Windy</p>
                 </div>
             </div>
-            <div class="uv-index">
-                <h4>UV Index</h4>
-                <img src="icons.svg/uv-index.svg" alt="uv-stat"  id="uv-svg">
+            <div class="humidity">
+                <h4>Humidity</h4>
+                <img src="icons/humidity.svg" alt="uv-stat"  id="humidity-svg">
                 <hr>
-                <div id="uv-details">
-                    <p><span style="font-weight: bold; font-size: 2rem;">5.50</span>&nbsp;uv</p>
+                <div id="humid-details">
+                    <p><span style="font-weight: bold; font-size: 2rem;" id="humid">5.50</span>&nbsp;g/m<sup>3</sup></p>
                 </div>
             </div>
             <div class="sunrise-sunset">
                 <h4>Sunset and Sunrise</h4>
                 <div id="sunrise">
                     <div class="icon">
-                      <img src="icons.svg/sunrise.svg" alt="sunrise-svg" id="sunrise-svg">  
+                      <img src="icons/sunrise.svg" alt="sunrise-svg" id="sunrise-svg">  
                       <p>Sunrise</p>
                     </div>
-                    
-                    5:24 A.M
+                    <div id="sunrise-time">5:24 A.M</div>
                 </div>
                 <div id="sunset">
                     <div class="icon">
-                       <img src="icons.svg/sunset.svg" alt="sunset-svg" id="sunset-svg"> 
+                       <img src="icons/sunset.svg" alt="sunset-svg" id="sunset-svg"> 
                        <p>Sunset</p>
                     </div>
-                    
-                    6:03 P.M
+                    <div id="sunset-time">6:03 P.M</div>
                 </div>
             </div>
         </div>

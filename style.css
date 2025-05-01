@@ -103,7 +103,7 @@ main {
     gap: 20px;
 }
 
-.wind-status, .uv-index, .sunrise-sunset {
+.wind-status, .humidity, .sunrise-sunset {
     background: rgba(255, 255, 255, 0.1); /* semi-transparent white */
     border-radius: 15px;
     backdrop-filter: blur(10px); /* the actual frosted glass magic */
@@ -127,13 +127,13 @@ main {
     align-items: center;
 }
 
-.uv-index img {
+.humidity img {
     display: block;
     margin: 0.5rem auto;
     width: 120px; 
 }
 
-#uv-details {
+#humid-details {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
